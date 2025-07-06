@@ -13,6 +13,9 @@ RUN javac src/Main.java
 #RUN javac Main.java
 
 # Run the application
-CMD ["java","-cp","src","Main"]  # "-cp" is changing the path to "src"
-#CMD ["java","Main"]              # Default entry point, when docker run used. Can be changed.
-#ENTRYPOINT ["java","Main"]       # Define the entry point, when docker run used. Cannot be changed.
+CMD ["java","-cp","src","Main"]  
+#- "-cp" is changing the path to "src"
+#CMD ["java","Main"]              
+#- Default entry point, when docker run used. Can be changed.
+#ENTRYPOINT ["java","Main"]       
+#- Define the entry point, when docker run used. Cannot be changed.
